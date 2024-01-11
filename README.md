@@ -17,12 +17,12 @@
 
 
 ```
-username = 'your username'
-password = 'your password'
-to = 'destination number'
-from = 'your panel number'
-text = 'text to send' 
-url = basic url + 'username'=username&'password'=password&'from'=from&'to'=to'&text'=text
+username = "your username";
+password = "your password";
+to = "destination number";
+from = "your panel number";
+text = "text to send"; 
+url = basic url + "username"=username&"password"=password&"from"=from&"to"=to&"text"=text;
 WebRequest request = HttpWebRequest.Create(url);  
 WebResponse response = request.GetResponse();  
 StreamReader reader = new StreamReader(response.GetResponseStream());  
